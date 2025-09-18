@@ -21,3 +21,11 @@ git commit -m'<Message>'
 git checkout
 6. For taking the latest code from remote repo
 git pull
+
+Java Basic
+1. Var ags
+2. Static method can call another static method
+3. Static Block execute always first and only one time
+4. Overloading and Overriding
+5. Interfaces (Java 8 interface updates)
+6. 
