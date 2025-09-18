@@ -17,3 +17,7 @@ git checkout -b <branch_name>
 git push
 4. to commit the changes
 git commit -m'<Message>'
+5. For switching branch 
+git checkout
+6. For taking the latest code from remote repo
+git pull
