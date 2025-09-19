@@ -27,5 +27,31 @@ Java Basic
 2. Static method can call another static method
 3. Static Block execute always first and only one time
 4. Overloading and Overriding
-5. Interfaces (Java 8 interface updates)
-6. 
+5. Overriding Rule
+    you can't limit the scope
+    you can't throw child exception 
+6. Interfaces (Java 8 interface updates) -- static and default method 
+7. Abstract Class and interface--> variable of abstract class can be private protected 
+    you can implement multiple interface but can't extends multiple abstract
+8. Java don't support multiple inheritance.
+9. Marker Interface --> serializable, cloneable 
+    Provides instruction to do something don't have any method
+10. Functional Interface -->@FunctionalInterface --> Lambda Expression
+    That contains single abstract method
+    example-> comparable,comparator, runnable
+11. Exception --> Checked and Unchecked
+12. RuntimeException --> is the base class for all the Unchecked
+13. Exception Handling--> try catch finally throw and throws
+                            Throwable
+                    Exception         Errors
+               Runtime                OutOfMemory,StackOverflow
+Stack is Last In first out 
+Queue is First In First out 
+14. Collection Framework --> 
+                        Iterable(Interface)
+                        Collection(Interface)
+            List(Interface)    Set(Interface)          Queue(Interface)
+            ArrayList(class)   HashSet(class)          PriorityQueue(class)
+            LinkedList(class)  LinkedHasSet(class)     ArrayDeque(class)
+            Vector(class)      TreeSet(class)
+            Stack(class)
