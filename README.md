@@ -55,3 +55,26 @@ Queue is First In First out
             LinkedList(class)  LinkedHasSet(class)     ArrayDeque(class)
             Vector(class)      TreeSet(class)
             Stack(class)
+Project Started 
+Oracle v2012 --> jdbc v12// removed even 
+Oracle v2025 --> jdbc v25
+For example you company
+15. Dependency Management --> maven 
+Apache Maven is a build automation and project management tool.
+    * Build lifecycle (compile, test,package,deploy) mvn clean install 
+    * Dependencies
+    * Project Structure(standard director layout)
+    * Plugins & goals(extend build capabilities)
+    * Project documentation and reporting
+
+Key features
+1. Dependency management
+2. Convention over Configuration 
+3. Build Lifecycle clean(remove old build files) , default(compile,test,package,install,deploy) ,site 
+4. Plugins 
+
+important commands:
+mvn clean
+mvn install
+mvn compile
+mvn package
