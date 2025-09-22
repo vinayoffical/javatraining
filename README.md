@@ -78,3 +78,41 @@ mvn clean
 mvn install
 mvn compile
 mvn package
+
+16. Docker is an open source platform that allows developers to build, package and run applications inside containers.
+A container is a lightweight,standalone and portable unit that contains everything need to run an application: code, runtime
+libraries and dependencies. 
+
+Before Docker , developers face the common problems:
+* "It works on my machine" 
+* Complex setup and dependency conflicts
+* Slow deployment cycles.
+
+Key Concepts:
+* Image 
+  * A blueprint for containers.
+  * contains application code + dependencies.
+* Container 
+  * A running instance of an image.
+  * Lightweight and isolated but share the host OS kernel.
+  
+* DockerFile
+  * A script with instruction to build the image.
+* Docker Hub
+  * A public registry to share and download images
+* Docker Engine
+  * Core part of Docker that runs and manages containers.
+
+Benefits of Docker
+* Portability
+* Scalability
+* isolation 
+* Speed 
+
+Kubernetes:
+K8s is an open source container orchestration platform.
+It automates the deployment scaling and management of containerized applications
+
+Client --> Server (Load Balancer) 
+
+
