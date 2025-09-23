@@ -116,3 +116,67 @@ It automates the deployment scaling and management of containerized applications
 Client --> Server (Load Balancer) 
 
 
+Order Service(Producers)  --> orderds
+Restaurant Service(Consumer)
+Delivery Service(Consumers)
+Notification(Consumers)
+
+Spring Boot:
+
+Spring Boot is a framework built on top of the Spring Framework that makes it easier to create production ready
+stand-alone applications quickly with minimum configuration.
+
+Key Features of Spring Boot:
+1. Auto-configuration:
+    * Automatically configures beans and dependencies based on what's available on classpath(eg if you add Spring web depedency
+   it automatically Configures tomcat and MVC).
+2. Standalone Applications:
+   * No need for an external server(Tomcat/Jetty). Application can be run by simple java -jar.
+3. Embedded Servers
+4. Production Ready Features
+
+
+Spring Profile
+A Spring Profile is way to group and manage different configuration for different environments.
+(like dev, sit,uat and prod).
+
+java -jar <buildName>.jar --spring.profiles.active=dev
+
+Spring Framework:
+
+The Spring framework is a lightweight open source framework for building java applications.
+It provides infrastructure support so developers can focus on business logic instead of boilerplate code
+(like creating object,managing transactions or handling security).
+
+Core features of Spring:
+1. Inversion of Control(IoC) / Dependency Injection(DI)
+    Instead of classes creating their own dependence Spring injects them at runtime.
+2. Aspect Oriented Program:
+   Separates cross-cutting concerns( logging,transaction and security )from business logic.
+3. Data Access Layers
+   Simplifies working with JDBC,Hibernate and JPA.
+4. Spring MVC
+5. Spring security
+   Provides authentication, authorization and security feature.
+6. Spring Testing
+
+Spring JDBC:
+Spring JDBC is a part of spring framework that simplifies working with relational databases using JDBC(Java Database
+Connectivity).
+Normally plain JDBC requires a lot of boilerplate code:
+* Load the driver
+* Open Connection
+* Execute query
+* Process results 
+* Closes resources
+    
+Spring JDBC reduces all this by using JDBCTemplate and handles resource management automatically.
+
+Key Features of Spring JDBC:
+1. JdbcTemplate
+2. Exception Translation
+3. RowMapper maps rows from ResultSet to java objects
+4. Automatic Resource management
+
+Hibernate:
+Hibernate is a Java based ORM(Object Relational Mapping) framework.
