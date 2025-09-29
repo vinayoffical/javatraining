@@ -179,4 +179,58 @@ Key Features of Spring JDBC:
 4. Automatic Resource management
 
 Hibernate:
-Hibernate is a Java based ORM(Object Relational Mapping) framework.
+Hibernate is a Java based ORM(Object Relational Mapping) framework for mapping Java Object(POJOs) to relational
+database tables.
+
+Instead of writing raw SQL queries and handling JDBC code, you can define entity classes in java dn Hibernate
+automatically manages database interactions(CRUD, join,relationship etc).
+
+Spring Microservices:
+Spring microservices is an architectural approach where a large application is built as a collection of 
+small,independent, and loosely copied services.
+Each service is focused on specific business capability runs in its own process and communication with 
+other services using lightweight protocols( usually HTTP/REST,messaging).
+when implemented with Sprig Boot and Spring cloud, building microservice becomes simpler because Spring 
+provides ready to use tools.
+
+Concepts of Spring Microservice:
+1. Spring Boot:
+   * Provides a framework to build standalone service quickly,
+   * Autoconfiguration and embedded servers.
+   * Each microservice runs independently.
+2. Spring Cloud:
+   * A collection of tools to manage microservice in distributed systems.
+   * Helps with service discovery,configuration,load balancing,fault tolerance and API gateways.
+3. Service Discovery(Eureka Service/ Client)
+   * Each service register itself with a discovery server(like Netflix Eureka).
+   * Client doesn't need to know exact service URLs they just ask the discover server.
+4. API Gateway(Spring Cloud Gateway/ Zuul)
+   * Acts a single entry point to microservices.
+   * Provides routing, load balancing, authentication ,logging and monitoring
+5. Centralized Configuration(Spring Cloud Config)
+    * Stores all configuration files in one place (Git SVN or filesystem).
+    * Microservice fetch configuration dynamically.
+6. Load Balancing(Ribbon/ Spring Cloud LoadBalancer)
+    * Distributes requests across multiple instance of microservices.
+7. Fault Tolerance and Resilience(Resilience4J/ Hystrix)
+   * Handles failures gracefully with circuit breakers, retries ,bulkheads,fallbacks.
+8. Communication:
+   * Synchronous - REST APIs with Feign Client.
+   * Asynchronous - Messaging with kafka, Rabbit MQ.
+9. Distributed Tracking & Monitoring(Sleuth + Zipkin, Micrometer+Prometheus+Grafana)
+    * Traces requests across service.
+    * Monitors performance and availability.
+10. Containerization & Orchestration:
+    * Microservice packages as Docker containers.
+    * Managed by Kubernetes for scaling deployment and self-healing.
+
+Advantages:
+* Scalability: Each microservice can scale independently.
+* Flexibility -> Different team can work on different service.
+* Resilience --> failure of one service doesn't bring whole system down.
+* Faster Deployment --> Independent release cycles.
+
+Challenges:
+* complexity in communication and data consistency.
+* Requires DevOps automation (CI/CD)
+* Monitoring and debugging across service is harder
